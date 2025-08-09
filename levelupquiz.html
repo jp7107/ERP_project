@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ERP Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+        style="backdrop-filter: blur(10px); background-color: rgba(33, 37, 41, 0.9);">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex  gap-2" href="dashboard.html">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/student-center.png" width="32" height="32"
+                    alt="Logo" class="rounded-circle shadow-sm">
+                <span class="fw-semibold">ERP-Portal</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end mb-1" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold fs-5" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold fs-5" href="login.html">Login!</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle fw-semibold active fs-5" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user fs-5"></i> Profile
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- all other is  here -->
+    <div class=" container py-5">
+        <h1 class="fw-bold my-4 mb-1 p-3 text-center">Welcome To ERP Portal</h1>
+        <!-- felxing items '' -->
+        <div class="outer0 d-flex bg-light text-dark ">
+
+            <!-- sidebar  -->
+            <div class="outer1 d-flex slidebar flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 300px;">
+                <a href="dashboard.html" class="d-flex  text-decoration-none">
+
+                    <span class="fs-3 font-dmsans text-primary-emphasis fw-bold text-uppercase"><i
+                            class="fa-regular fa-font-awesome"></i> SMART ERP</span>
+                </a>
+                <hr />
+                <ul class=" nav nav-pills flex-column mb-auto fs-5 side-link">
+                    <li class="hover nav-item side-link">
+                        <a href="dashboard.html" class="nav-link link-body-emphasis">
+                            <i class="fa-solid fa-id-card"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="hover nav-item side-link ">
+                        <a href="subjects.html" class="nav-link link-body-emphasis ">
+                            <i class="fa-solid fa-chart-line"></i> Subjects
+                        </a>
+                    </li>
+                    <li class="hover nav-item side-link ">
+                        <a href="resume.html" class="nav-link link-body-emphasis">
+                            <i class="fa-regular fa-file-pdf"></i> Auto resume generator
+                        </a>
+                    </li>
+                    <li class="hover nav-item side-link">
+                        <a href="leave.html" class="nav-link link-body-emphasis">
+                            <i class="fa-regular fa-file-lines"></i> Leave Application
+                        </a>
+                    </li>
+                    <li class="hover nav-item side-link">
+                        <a href="levelupquiz.html" class="nav-link link-body-emphasis">
+                            <i class="fa-regular fa-pen-to-square"></i> Level Up Quiz
+                        </a>
+                    </li>
+                    <li class="hover nav-item side-link ">
+                        <a href="smartscoreboard.html" class="nav-link link-body-emphasis">
+                            <i class="fa-solid fa-square-poll-vertical"></i> Smart Scoreboard
+                        </a>
+                    </li>
+                    <li class="hover nav-item side-link">
+                        <a href="grievance.html" class="nav-link link-body-emphasis">
+                            <i class="fa-regular fa-comments"></i> Grievance
+                        </a>
+                    </li>
+                </ul>
+                <hr />
+                <div class="dropdown">
+                    <a href="#" class="d-flex  link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <strong><i class="fs-5 fa-regular fa-circle-user"></i> student/user</strong>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- QUIZZZZ -->
+            <div class="container">
+                <h2 class="text-center text-primary mb-4">🚀 Level-Up Quiz</h2>
+
+                <!-- Step 1: Student Info Form -->
+                <div id="studentForm">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Roll No</label>
+                        <input type="text" class="form-control" id="roll" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Branch</label>
+                        <select class="form-select" id="branch">
+                            <option>CSE</option>
+                            <option>ECE</option>
+                            <option>EEE</option>
+                            <option>ME</option>
+                            <option>CE</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary w-100" onclick="startQuiz()">Start Quiz</button>
+                </div>
+
+                <!-- Step 2: Quiz Questions -->
+                <div id="quizBox" class="quiz-box">
+                    <form id="quizForm">
+                        <div class="mb-3">
+                            <label>1. What is the output of 5 == '5' in JS?</label><br>
+                            <input type="radio" name="q1" value="false" /> False<br>
+                            <input type="radio" name="q1" value="true" /> True
+                        </div>
+                        <div class="mb-3">
+                            <label>2. const in C means?</label><br>
+                            <input type="radio" name="q2" value="constant" /> Constant variable<br>
+                            <input type="radio" name="q2" value="var" /> A new variable
+                        </div>
+                        <div class="mb-3">
+                            <label>3. Bootstrap is used for?</label><br>
+                            <input type="radio" name="q3" value="design" /> UI/Design<br>
+                            <input type="radio" name="q3" value="backend" /> Backend Logic
+                        </div>
+                        <button type="button" class="btn btn-success w-100" onclick="submitQuiz()">Submit Quiz</button>
+                    </form>
+                </div>
+
+                <!-- Step 3: Result -->
+                <div id="resultBox" class="mt-4"></div>
+            </div>
+
+            <script>
+                let student = {};
+
+                function startQuiz() {
+                    student.name = document.getElementById("name").value.trim();
+                    student.roll = document.getElementById("roll").value.trim();
+                    student.branch = document.getElementById("branch").value;
+
+                    if (!student.name || !student.roll) {
+                        alert("Please fill all student details");
+                        return;
+                    }
+
+                    document.getElementById("studentForm").style.display = "none";
+                    document.getElementById("quizBox").style.display = "block";
+                }
+
+                function submitQuiz() {
+                    const answers = {
+                        q1: "false",
+                        q2: "constant",
+                        q3: "design"
+                    };
+
+                    let score = 0;
+                    let wrong = [];
+
+                    Object.keys(answers).forEach(q => {
+                        const selected = document.querySelector(`input[name=${q}]:checked`);
+                        if (selected) {
+                            if (selected.value === answers[q]) score++;
+                            else wrong.push(q.toUpperCase());
+                        } else {
+                            wrong.push(q.toUpperCase());
+                        }
+                    });
+
+                    student.score = score;
+                    student.wrong = wrong;
+
+                    // Store result in localStorage
+                    const prev = JSON.parse(localStorage.getItem("quizResults")) || [];
+                    prev.push(student);
+                    localStorage.setItem("quizResults", JSON.stringify(prev));
+
+                    // Show result
+
+                    document.getElementById("quizBox").style.display = "none";
+                    document.getElementById("resultBox").innerHTML = `
+      <div class="alert alert-info">
+        <h5>🎉 Result for ${student.name} (${student.roll} - ${student.branch})</h5>
+        <p>Score: <strong>${score}/3</strong></p>
+        <p>${wrong.length ? 'Wrong Answers: ' + wrong.join(", ") : '✅ All Correct!'}</p>
+        <a href="smartscoreboard.html" class="btn btn-dark mt-2">View Scoreboard</a>
+      </div>
+    `;
+                }
+            </script>
+        </div>
+
+        <footer class="footer text-white pt-5  my-5 bg-lg-dark pb-4">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Branding / About -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h4 class="fw-bold text-warning footer-link">ERP Portal</h4>
+                        <p class="text-light footer-link">
+                            Manage your institution with confidence. Our ERP system empowers you to handle students,
+                            staff,
+                            academics, and more with ease.
+                        </p>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h6 class="text-uppercase text-warning fw-bold footer-link">Quick Links</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footer-link">Dashboard</a></li>
+                            <li><a href="#" class="footer-link">Admissions</a></li>
+                            <li><a href="#" class="footer-link">Attendance</a></li>
+                            <li><a href="#" class="footer-link">Exams</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h6 class="text-uppercase text-warning fw-bold footer-link">Resources</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footer-link">Documentation</a></li>
+                            <li><a href="#" class="footer-link">Help Center</a></li>
+                            <li><a href="#" class="footer-link">User Guide</a></li>
+                            <li><a href="#" class="footer-link">Support</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h6 class="text-uppercase text-warning fw-bold footer-link">Contact</h6>
+                        <p class="footer-link"><i class="bi bi-envelope-fill me-2 "></i> erp.support@college.com</p>
+                        <p class="footer-link"><i class="bi bi-phone-fill me-2 "></i> +91 99999 88888</p>
+                        <p class="footer-link"><i class="bi bi-geo-alt-fill me-2 "></i> 123 ERP Lane, Tech City, India
+                        </p>
+                        <div class="mt-2">
+                            <a href="#" class="me-3 social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="me-3 social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="me-3 social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center border-top pt-3 mt-4 text-light small">
+                    &copy; 2025 ERP Portal. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- script file at last -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
